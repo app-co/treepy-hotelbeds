@@ -1,6 +1,7 @@
 /* eslint-disable camelcase */
 import * as S from './styles'
 import imgHotel from '../../assets/logo.jpeg'
+import imgTree from '../../../public/images/logo-branco-e-verde-removebg-1.png'
 import { api } from '../../service/api'
 import React from 'react'
 
@@ -29,6 +30,14 @@ export function Home() {
   return (
     <S.main>
       <S.body>
+        <div
+          style={{
+            width: '100%',
+            alignItems: 'flex-start',
+          }}
+        >
+          <S.imgHotel style={{ marginLeft: 20 }} src={imgTree} />
+        </div>
         <S.container>
           <S.imgHotel src={imgHotel} />
           <S.title>PROJETO REFLORESTAR</S.title>
