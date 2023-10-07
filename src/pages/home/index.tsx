@@ -17,7 +17,7 @@ export function Home() {
         full_name,
         email,
         phone_number,
-        tree,
+        tree: Number(tree),
       })
 
       console.log(sub.data)
